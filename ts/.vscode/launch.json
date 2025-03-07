@@ -304,6 +304,17 @@
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "disableOptimisticBPs": true
-    }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch knowProShow",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/packages/knowProShow",
+      "program": "${workspaceFolder}/packages/knowProShow/node_modules/webpack/bin/webpack.js", 
+      "args": ["serve", "--open"],
+      "console": "externalTerminal",
+      "outFiles": ["${workspaceFolder}/**/*.js"]
+    },
   ]
 }

@@ -17,7 +17,7 @@ export default {
             directory: path.join(dirName, "dist"),
         },
         compress: true,
-        port: 9010,
+        port: 9011,
     },
     entry: {
         index: path.join(srcDir, "site", "index.ts"),
